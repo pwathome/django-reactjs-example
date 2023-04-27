@@ -1,8 +1,8 @@
-import React, { Compoenent } from 'react'
+import React, { Component } from 'react'
 import { Table } from 'reactstrap'
 import NewStudentModal from './NewStudentModal'
 
-import ConfirmRemovalModal from './ConfirmRemovalModal'
+import ConfirmRemovalModal from './ConfirmRemoval'
 
 class StudentList extends Component {
   render() {

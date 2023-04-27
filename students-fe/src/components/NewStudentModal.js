@@ -33,7 +33,7 @@ class NewStudentModal extends Component {
         {button}
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>{title}</ModalHeader>
-          <ModalBoy>
+          <ModalBody>
             <NewStudentForm
               resetState={this.props.resetState}
               toggle={this.toggle}
