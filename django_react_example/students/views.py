@@ -9,16 +9,16 @@ from .serializers import *
 def student_list(request):
     if request.method == 'GET':
         data = Student.objects.all()
-        
+
         serializer = StudentSerializer(data, context={'request': request}, many=True)
         
         return Response(serializer.data)
-        
+
     elif request.method == 'POST':
         serializer = StudentSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Resonse(status=HTTP_201_CREATED)
+            return Response(status=HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
