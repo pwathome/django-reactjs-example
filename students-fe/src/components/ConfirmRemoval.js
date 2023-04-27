@@ -32,7 +32,7 @@ class ConfirmRemoval extends Component {
         </Button>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>
-            Do you really want to delet the student?
+            Do you really want to delete the student?
           </ModalHeader>
           
           <ModalFooter>

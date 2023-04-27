@@ -32,7 +32,7 @@ def student_detail(request, pk):
     if request.method == 'PUT':
         serializer = StudentSerializer(student, data=request.data, context={'request': request})
         if serializer.is_valid():
-            serilzer.save()
+            serialzer.save()
             return Response(status=status.HTTP_204_NO_CONTENT)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
