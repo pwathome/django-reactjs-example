@@ -40,7 +40,7 @@ class StudentList extends Component {
                     student={student}
                     resetState={this.props.resetState}
                   />
-                  &nbsp;nbsp;
+                  &nbsp;&nbsp;
                   <ConfirmRemovalModal
                     pk={student.pk}
                     resetState={this.props.resetState}
